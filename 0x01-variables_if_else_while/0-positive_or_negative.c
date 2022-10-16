@@ -1,8 +1,8 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* Determine if a random variable positive or negative*/
-/* main - Entry point */
+/* main - Determine if a random variable positive or negative*/
+
 /* Return 0 on success*/
 
 /* betty style doc for function main goes there */
