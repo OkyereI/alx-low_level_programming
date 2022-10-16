@@ -1,11 +1,12 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* main - Determine if a random variable positive or negative*/
+/**
+ * main - Determine if a random number is positive, negative or zero.
+(*
+ * Return: 0 on success
+ */
 
-/* Return 0 on success*/
-
-/* betty style doc for function main goes there */
 int main(void)
 {
 	int n;
