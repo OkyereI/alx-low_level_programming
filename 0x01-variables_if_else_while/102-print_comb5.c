@@ -10,54 +10,54 @@
  */
 int main(void)
 {
-	int a, b, c, d;
+	int i, j, k, l;
 
-	a = b = c = 48;
-       	d = 49;
-	while  ((a < 58))
+	i = j = k = 48;
+       	l = 49;
+	while  ((i < 58))
 	{
-		putchar(a);
-	       	putchar(b);
-	       	putchar(32);
-	       	putchar(c);
-	       	putchar(d);
-		if ((a == 57) && (b == 56) && (c == 57) && (d == 57))
+		putchar(i); 
+		putchar(j);
+	       	putchar(32); 
+		putchar(k);
+	       	putchar(l);
+		if ((i == 57) && (j == 56) && (k == 57) && (l == 57))
 		{
-			putchar('\n'); 
-			a++;
+			putchar('\n');
+		       	i++;
 		}
 		else
 		{
-			putchar(44); 
-			putchar(32);
-			if ((c == 57) && (d == 57))
+			putchar(44);
+		       	putchar(32);
+			if ((k == 57) && (l == 57))
 			{
-				if (b < 56)
+				if (j < 56)
 				{
-					d = ++b + 1;
-				       	c = a;
+					l = ++j + 1;
+				       	k = i;
 				}
-				else if (b == 56)
+				else if (j == 56)
 				{
-					b++; 
-					c = a + 1;
-				       	d = 48;
+					j++;
+				       	k = i + 1;
+				       	l = 48;
 				}
-				else if (b == 57)
+				else if (j == 57)
 				{
-					b = 48; 
-					d = 49;
-				       	c = ++a;
+					j = 48;
+				       	l = 49;
+				       	k = ++i;
 				}
 			}
-			else if (d < 57)
+			else if (l < 57)
 			{
-				d++;
+				l++;
 			}
 			else
 			{
-				d = 48;
-			       	c++;
+				l = 48;
+			       	k++;
 			}
 		}
 	}
