@@ -27,7 +27,7 @@ int main(void)
 			{
 				if (b < 56)
 				{
-					d= ++b + 1; c = a;
+					d = ++b + 1; c = a;
 				}
 				else if (b == 56)
 				{
@@ -38,7 +38,6 @@ int main(void)
 					b = 48; d = 49; c = ++a;
 				}
 			}
-	
 			else if (d < 57)
 			{
 				d++;
@@ -51,3 +50,5 @@ int main(void)
 	}
 	return (0);
 }
+
+
