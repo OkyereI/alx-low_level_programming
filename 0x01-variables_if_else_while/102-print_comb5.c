@@ -1,12 +1,11 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-
 /* betty style doc for function main goes there */
 /**
- * main - Entry point
+ * main - Entry coding point
  *
- * Return: Always 0 (Success)
+ * Return: Always 0 Success
  */
 int main(void)
 {
@@ -16,15 +15,15 @@ int main(void)
        	l = 49;
 	while  ((i < 58))
 	{
-		putchar(i); 
-		putchar(j);
-	       	putchar(32); 
-		putchar(k);
-	       	putchar(l);
+		putchar(i);
+	       	putchar(j);
+	       	putchar(32);
+	       	putchar(k); 
+		putchar(l);
 		if ((i == 57) && (j == 56) && (k == 57) && (l == 57))
 		{
-			putchar('\n');
-		       	i++;
+			putchar('\n'); 
+			i++;
 		}
 		else
 		{
@@ -63,5 +62,3 @@ int main(void)
 	}
 	return (0);
 }
-
-
