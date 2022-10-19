@@ -1,15 +1,22 @@
 #include "main.h"
 
 /**
- *  _islower - entry point
- *  Description: Return 1 if lowercase letter and 0 if not
- *  Return: 1 or 0
- */
+ *   print_alphabet_x10 - entry point
+ *     Description: Prints the alphabet with _putchar ten times
+ *  Return: void
+ */ 
 
-int _islower(int x)
+void print_alphabet_x10(void)
 {
-		if (x >= 'a' && x <= 'z')
-			return (1);
-				else
-					return (0);
+		char x;
+			int i;
+
+				for (i = 0; i < 10; i++)
+					{
+					for (x = 'a'; x <= 'z'; x++)
+						{
+																						_putchar(c);
+																								}
+				_putchar('\n');
+				}
 }
