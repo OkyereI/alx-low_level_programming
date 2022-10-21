@@ -8,22 +8,31 @@
  *       Return: largest number
  */
 
-int largest_number(int a, int b, int c)
-{
-int largest;
+/**
+ *  * largest_number - returns the largest of 3 numbers
+ *   * @a: first integer
+ *    * @b: second integer
+ *     * @c: third integer
+ *      * Return: largest number
+ *       */
+int main(){
+	int largest_number(int a, int b, int c);
 
-if (a > b && a > c)
-{
-		largest = a;
-}
-else if (b > c)
-{
-		largest = b;
-}
+	int largest,a,b,c;
+
+	if (a > b && a > c)
+	{
+		printf("%d largest is.\n" ,a);
+	}
+	else if (b > c)
+	{
+		printf("%d  largest is \n" ,b);
+	}
 	else
-{
-		largest = c;
-}
+	{
+		printf("%d largest is\n" ,c);
+	}
 
 	return (largest);
+
 }
