@@ -3,9 +3,8 @@
 /**
  * _puts - Prints a string .
  * @str: string.
- * Return: String length
  */
- void _puts(char *str)
+void _puts(char *str)
 {
 	while (*str)
 		_putchar(*str++);
