@@ -25,6 +25,6 @@ int main(char *dest, char *src)
 	}
 	*dest = '\0';
 
-	return (*s);
+	return (*src);
 }
 
