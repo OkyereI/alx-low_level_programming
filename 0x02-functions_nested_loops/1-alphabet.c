@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  *  print_alphabet - prints the lowercase alphabet with _putchar.
  *    Return: void
@@ -7,11 +7,11 @@
 
 void print_alphabet(void)
 {
-		char w;
+	char w;
 
-			for (w = 'a'; w <= 'z'; w++)
-			{
-				_putchar(w);
-			}
-				_putchar('\n');
+	for (w = 'a'; w <= 'z'; w++)
+	{
+		_putchar(w);
+	}
+	_putchar('\n');
 }
