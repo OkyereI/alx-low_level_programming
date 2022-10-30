@@ -8,23 +8,14 @@
 
 int main(void)
 {
-	int i, b, s, x, y;
+	int i, sum = 0;
 
-	t = 0;
-	for (i = 0; i <= (1024  / 3); i++)
+	for (i = 0; i < 1024; i++)
 	{
-		y = i * 3;
-		t = t + y;
+		if ((i % 3) == 0 || (i % 5) == 0)
+			sum = sum + i;
 	}
-	for (b = 0; b < (1024 / 5); b++)
-	{
-		if (!(b % 3 == 0))
-		{
-			x = b * 5;
-			t = t + x;
-		}
-	}
-	printf("%i\n", t);
+	printf("%d\n", sum);
 
 	return (0);
 }
