@@ -1,64 +1,30 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
-/* betty style doc for function main goes there */
+
 /**
- * main - Entry coding point
+ * main - Prints all possible combinations of two different digits,
+ *in ascending order, separated by a comma followed by a space.
  *
- * Return: Always 0 Success
+ * Return: Always 0.
  */
 int main(void)
 {
-	int i, j, k, l;
+	int digit1, digit2;
 
-	i = j = k = 48;
-       	l = 49;
-	while  ((i < 58))
+	for (digit1 = 0; digit1 < 9; digit1++)
 	{
-		putchar(i);
-	       	putchar(j);
-	       	putchar(32);
-	       	putchar(k); 
-		putchar(l);
-		if ((i == 57) && (j == 56) && (k == 57) && (l == 57))
+		for (digit2 = digit1 + 1; digit2 < 10; digit2++)
 		{
-			putchar('\n'); 
-			i++;
-		}
-		else
-		{
-			putchar(44);
-		       	putchar(32);
-			if ((k == 57) && (l == 57))
-			{
-				if (j < 56)
-				{
-					l = ++j + 1;
-				       	k = i;
-				}
-				else if (j == 56)
-				{
-					j++;
-				       	k = i + 1;
-				       	l = 48;
-				}
-				else if (j == 57)
-				{
-					j = 48;
-				       	l = 49;
-				       	k = ++i;
-				}
-			}
-			else if (l < 57)
-			{
-				l++;
-			}
-			else
-			{
-				l = 48;
-			       	k++;
-			}
+			putchar((digit1 % 10) + '0');
+			putchar((digit2 % 10) + '0');
+
+			if (digit1 == 8 && digit2 == 9)
+				continue;
+			putchar(',');
+			putchar(' ');
 		}
 	}
+
+	putchar('\n');
+
 	return (0);
 }
