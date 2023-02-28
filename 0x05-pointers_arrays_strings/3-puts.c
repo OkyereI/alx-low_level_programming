@@ -2,20 +2,13 @@
 #include "stdio.h"
 
 /**
- *  _puts - print a string
- *  @str:pointer char
- *  return:void
+ * _puts - Prints a string .
+ * @str: string.
  */
 void _puts(char *str)
 {
-	int k;
-
-	for (k = 0; str[k] != '\0'; k++)
-		{
-			_putchar(str[k]);
-		}
+	while (*str)
+		_putchar(*str++);
 
 	_putchar('\n');
-
-	return (0);
 }
