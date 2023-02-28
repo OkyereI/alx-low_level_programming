@@ -1,12 +1,18 @@
 #include "main.h"
 /**
- * _puts - Prints a string .
- * @str: string.
+ * _puts - put string
+ * @str: first parameter
+ *
+ * Description: prints a string
+ * Return: Alwalys (0)
  */
+
 void _puts(char *str)
 {
-	for ( ; *str != '/0'; str++)
-		_putchar(*str++);
-
+	while (*str != '\0')
+	{
+		_putchar(*str);
+		str++;
+	}
 	_putchar('\n');
 }
