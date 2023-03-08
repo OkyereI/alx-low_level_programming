@@ -1,6 +1,2 @@
-## 0x08. C - Recursion
-
-```Bash
-Introduction to recursion
-```
+I am working on my c program :- project 0x08 - recursion
 

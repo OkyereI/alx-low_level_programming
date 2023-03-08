@@ -1,11 +1,9 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- * factorial - print factorial
- * @n: input number
- *
- * Description: returns the factorial of a given number
- * Return: returns factorial
+ * factorial - factorial n
+ * @n: integer arams
+ * Return: recursion
  */
 
 int factorial(int n)
@@ -14,7 +12,7 @@ int factorial(int n)
 	{
 		return (-1);
 	}
-	else if (n <= 1)
+	if (n == 1)
 	{
 		return (1);
 	}

@@ -1,40 +1,44 @@
-#include "holberton.h"
+#include "main.h"
+
+int tmp_prime(int n, int i);
 
 /**
- * is_prime - find a prime number
- * @i: input int i
- * @j: input int j
- * Return: boolean val of the state of inputs
+ * divisors - number is prime?
+ * @n: integer params
+ * @m: integer params
+ * Return: boolean
  */
 
-int is_prime(int i, int j)
+int divisors(int n, int m)
 {
-	if (j == 1)
+	if (m % n == 0)
+	{
+		return (0);
+	}
+	else if (m / 2 > n)
+	{
+		return (divisors(n + 2, m));
+	}
+	else
 	{
 		return (1);
 	}
-	if (i % j == 0)
-	{
-		return (0);
-	}
-	return (is_prime(i, j - 1));
 }
 
- /**
-  * is_prime_number - printing prime numbers
-  * @n: input integer value
-  *
-  * Description: returns 1 if the input integer is a
-  * prime number, otherwise return 0
-  * Return: returns the state of the inout value
-  */
+/**
+ * is_prime_number - prime
+ * @n: integer params
+ * Return: recursion
+ */
 
 int is_prime_number(int n)
 {
-	if (n < 3)
+	if ((!(n % 2) && n != 2) || n < 2)
 	{
 		return (0);
 	}
-	return (is_prime(n, n - 1));
+	else
+	{
+		return (divisors(3, n));
+	}
 }
-

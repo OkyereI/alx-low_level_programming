@@ -1,15 +1,12 @@
-#include "holberton.h"
-#include "math.h"
+#include "main.h"
 
 /**
- * _pow_recursion - return power
- * @x: input x value
- * @y: input y value
- *
- * Description: returns the value of x raised
- * to the power of y
- * Return: returns the value of x
+ * _pow_recursion - pow recursion
+ * @x: integer params
+ * @y: integer paramtr
+ * Return: recursion
  */
+
 
 int _pow_recursion(int x, int y)
 {
@@ -17,7 +14,7 @@ int _pow_recursion(int x, int y)
 	{
 		return (-1);
 	}
-	else if (y == 0)
+	if (y == 0)
 	{
 		return (1);
 	}

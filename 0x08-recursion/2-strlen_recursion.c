@@ -1,11 +1,9 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- * _strlen_recursion - return string len
- * @s: input string
- *
- * Description: returns the length of a string
- * Return: returns string len
+ * _strlen_recursion - size
+ * @s: pointer to string params
+ * Return: recursion
  */
 
 int _strlen_recursion(char *s)
@@ -14,5 +12,5 @@ int _strlen_recursion(char *s)
 	{
 		return (0);
 	}
-	return (1 + _strlen_recursion(s + 1));
+	return (1 + _strlen_recursion(++s));
 }

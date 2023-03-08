@@ -1,12 +1,9 @@
-#include "holberton.h"
-#include "stdio.h"
+#include "main.h"
 
 /**
- * _print_rev_recursion - print reverse
- * @s: input string
+ * _print_rev_recursion - reverse
+ * @s: pointer to string params
  *
- * Description: prints a string in reverse
- * Return: always 0
  */
 
 void _print_rev_recursion(char *s)
