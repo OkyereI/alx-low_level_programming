@@ -1,14 +1,18 @@
 #include "holberton.h"
-#include <stdlib.h>
 
 /**
- * _abs - prints te absolute value
- * @n: input parameter
+ * _abs - check the code for Holberton School students.
+ *
+ * @n: is an integer argument
+ *
  * Return: Always 0.
  */
 
 int _abs(int n)
 {
-	return (abs(n));
+	if (n >= 0)
+	{
+		return (n);
+	}
+	return (-n);
 }
-

@@ -1,11 +1,9 @@
 #include "holberton.h"
 
 /**
- * _puts - put string
- * @str: first parameter
- *
- * Description: prints a string
- * Return: Alwalys (0)
+ * _puts - prints string
+ * @str: input string
+ * Return: no return
  */
 
 void _puts(char *str)
@@ -17,4 +15,3 @@ void _puts(char *str)
 	}
 	_putchar('\n');
 }
-

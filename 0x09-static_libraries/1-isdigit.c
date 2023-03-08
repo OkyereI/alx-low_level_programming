@@ -1,14 +1,16 @@
 #include "holberton.h"
 
 /**
- * _isdigit - 1 if c is a digit
- * @c: input value
+ * _isdigit - check the code for Holberton School students.
  *
- * Description: checks for a digit (0 through 9).
- * Return: Always (0).
+ * @c: is an integer param
+ *
+ * Return: Always 0.
  */
+
 
 int _isdigit(int c)
 {
-	return (c >= '0' && c <= '9');
+
+	return (c >= 48 && c <= 57);
 }

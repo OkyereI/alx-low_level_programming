@@ -1,28 +1,29 @@
 #include "holberton.h"
-
 /**
- * _atoi - converts strings to int
- * @s: first parameter
- *
- * Description: takes all types of char
- * Return: 0 for success
+ * _atoi - int
+ * @s: pointer
+ * Return: int.
  */
+int _atoi(char *s)
+{
+	int i;
+	int res = 0;
+	int sig = -1;
+	int brk = 0;
 
-int _atoi(char *s) 
-{ 
-	int result, sign, i;
-
-	result = 0;
-	sign = 1; 
-	i = 0; 
-	if (s[0] == '-') { 
-		sign = -1; 
-
-		i++; 
-	} 
-	for (; s[i] != '\0'; ++i)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		result = result * 10 + s[i] - '0'; 
+		if (s[i] == '-')
+			sig = sig * -1;
+		if (s[i] >= '0' && s[i] <= '9')
+		{
+			res = res * 10;
+			res -= (s[i] - '0');
+			brk = 1;
+		}
+		else if (brk == 1)
+			break;
 	}
-	return (sign * result); 
+	res = sig * res;
+	return (res);
 }
