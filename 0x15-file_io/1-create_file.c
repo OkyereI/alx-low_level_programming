@@ -1,4 +1,5 @@
 #include "main.h"
+#include "stdio.h"
 
 /**
  * create_file - creates a file and fills it with text
@@ -9,7 +10,7 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-	int fd, x, y = 0;
+	int fd, i, j = 0;
 
 	if (!filename)
 		return (-1);
@@ -20,10 +21,10 @@ int create_file(const char *filename, char *text_content)
 
 	if (text_content)
 	{
-		while (text_content[y])
-			y++;
-		x = write(fd, text_content, y);
-		if (x != y)
+		while (text_content[j])
+			j++;
+		i = write(fd, text_content, j);
+		if (i != j)
 			return (-1);
 	}
 
